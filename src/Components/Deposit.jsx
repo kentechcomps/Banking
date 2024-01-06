@@ -19,7 +19,7 @@ const [formData, setFormData] = useState({
 
 const handleSubmit = (event) =>{
     event.preventDefault()
-    fetch('http://127.0.0.1:5000/banking/deposit' ,{
+    fetch('https://bankingbackend-3x7g.onrender.com/deposit' ,{
   
 method: "POST",
 headers: {

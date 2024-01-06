@@ -46,7 +46,7 @@ const changepin = async () => {
     console.log(old_password);
     console.log(new_password);
 
-    const response = await axios.post('http://127.0.0.1:5000/banking/changepassword', {
+    const response = await axios.post('https://bankingbackend-3x7g.onrender.com/changepassword', {
       Accountno: AccountNo,
       old_password: old_password,
       new_password: new_password,

@@ -18,7 +18,7 @@ const Signup = ()=>{
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/banking/signup', {
+      const response = await axios.post('https://bankingbackend-3x7g.onrender.com/signup', {
         Firstname: Firstname,
         Lastname: Lastname,
         Accountnumber: Accountnumber,
