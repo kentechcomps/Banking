@@ -21,7 +21,7 @@ const [loading, setLoading] = useState(false);
 const handleSubmit = (event) =>{
   event.preventDefault()
 
-fetch('http://127.0.0.1:5000/banking/login' ,{
+fetch('https://bankingbackend-3x7g.onrender.com/banking/login' ,{
   
 method: "POST",
 headers: {
