@@ -3,11 +3,12 @@ import axios from 'axios';
 import Changepin from '../assets/changepin.svg'
 import Deposit from '../assets/deposit.svg'
 import images from '../assets/images.png'
+import image from '../assets/graph.jpg'
 import tips from '../assets/tips.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Swal from 'sweetalert2'
-import NavigationBar from "./Navbar";
+
 
 import { Link } from "react-router-dom";
 
@@ -78,11 +79,16 @@ const financialtips =() => {
 
 
     return(
-  <div>
-    <NavigationBar    
-    Firstname = {Firstname}
-
-    />
+  <div
+  style={{
+    width: '100%',
+    height: '1000px', /* Adjust the height as needed */
+    backgroundImage: `url(${image})`, /* Path to your image */
+    backgroundSize: 'cover', /* Scale the image to cover the div */
+    backgroundPosition: 'center', /* Center the image */
+    backgroundRepeat: 'no-repeat', /* Prevent image repetition */
+  }}
+  >
       <div className="text-center">
             
             <div className="row row-cols-1 row-cols-md-2 g-4 mx-auto"
